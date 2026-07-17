@@ -1,0 +1,4 @@
+FROM amazoncorretto:21
+VOLUME /tmp
+COPY target/usuariosBuild.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
