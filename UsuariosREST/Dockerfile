@@ -1,4 +1,4 @@
-FROM amazoncorretto:21
+FROM eclipse-temurin:25-jdk-jammy
 VOLUME /tmp
 COPY target/usuariosBuild.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
